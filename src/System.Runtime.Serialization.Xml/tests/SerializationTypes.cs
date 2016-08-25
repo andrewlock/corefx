@@ -2920,3 +2920,20 @@ public class TypeOfReferenceChild
     [DataMember]
     public string Name { get; set; }
 }
+
+public class Animal
+{
+    public int age = 4;
+    public string name = "Rusky";
+}
+
+public class Dog : Animal
+{
+    public DogBreed breed = DogBreed.LabradorRetriever;
+}
+
+public enum DogBreed
+{
+    GermanShepherd,
+    LabradorRetriever
+}
